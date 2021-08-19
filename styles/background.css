@@ -1,8 +1,19 @@
 body {
-    background-color: black;
-    background-size: cover;
+    background-color: #090620;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
 }
 
-div {
-    display: none;
+#particles-js {
+    background: inherit;
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: wheat;
+    display: flex;
 }
