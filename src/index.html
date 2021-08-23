@@ -8,8 +8,33 @@
         <title>Exoplanets</title>
     </head>
     <body>
-        <div id="particles-js"></div>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script>particlesJS.load('particles-js', '../assets/particles.json')</script>
+        <div id="particles-js">
+            <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+            <script>particlesJS.load('particles-js', '../assets/particles.json')</script>
+            <div class="data-container">
+                <div class="model-bg">
+                    <canvas id="planet-model" width="300px" height="300px">
+                        <script>
+                            var c = document.getElementById("planet-model");
+                            var ctx = c.getContext("2d");
+                            ctx.beginPath();
+                            ctx.arc(150, 150, 90, 0, 2 * Math.PI, false);
+                            ctx.fillStyle = 'green';
+                            ctx.fill();
+                            ctx.lineWidth = 5;
+                            ctx.strokeStyle = '#003300';
+                            ctx.stroke();
+                        </script>
+                    </canvas>
+                </div>
+                <div id="vl"></div>
+                <div class="query-bg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        </body>
     </body>
 </html>
