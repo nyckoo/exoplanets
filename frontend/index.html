@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400;600&display=swap" rel="stylesheet">
+        <title>Exoplanets</title>
+    </head>
+    <body>
+        <script type="module" src="/static/js/index.js"></script>
+        <div id="particles-js">
+            <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+            <script>particlesJS.load('particles-js', '/static/assets/particles.json')</script>
+            <header>
+                <nav class="navbar">
+                    <a href="/" class="nav__link" data-link>HOME</a>
+                    <a href="/search" class="nav__link" data-link>SEARCH</a>
+                    <a href="/about" class="nav__link" data-link>ABOUT</a>
+                    <a href="/stats" class="nav__link" data-link>STATS</a>
+                </nav>
+            </header>
+            <div id="app"></div>
+        </div>
+    </body>
+</html>
