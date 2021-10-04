@@ -3,6 +3,8 @@ import Search from "./views/Search.mjs";
 import About from "./views/About.mjs";
 import Stats from "./views/Stats.mjs";
 
+'use strict';
+
 // Navigation to sections instead of refreshing the page
 const navigateTo = url => {
     history.pushState(null, null, url);
@@ -42,7 +44,9 @@ const router = async () => {
     // New instance of current section
     const view = new match.route.view();
 
+    // Load page content -- HTML ->- Script --
     document.querySelector("#app").innerHTML = await view.getHtml();
+    view.getScript();
 };
 
 // Navigate properly routing through history
@@ -50,12 +54,11 @@ window.addEventListener("popstate", router);
 
 // Use navigation without refreshing on nav links
 document.addEventListener("DOMContentLoaded", () => {
+    router();
     document.body.addEventListener("click", e => {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();
             navigateTo(e.target.href);
         }
     });
-
-    router();
 });

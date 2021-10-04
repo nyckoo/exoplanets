@@ -3,7 +3,7 @@ import AbstractView from "./AbstractView.mjs";
 export default class extends AbstractView {
     constructor() {
         super();
-        this.setTitle("Home");
+        this.setTitle("Exoplanets - Home");
     }
 
     async getHtml() {
@@ -15,5 +15,9 @@ export default class extends AbstractView {
                 </p>    
             </div>
         `;
+    }
+
+    async getScript() {
+        return null;
     }
 }

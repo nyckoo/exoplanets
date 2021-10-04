@@ -5,7 +5,7 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(path.resolve(__dirname, "frontend")));
+app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")));
 
 app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "frontend", "index.html"));

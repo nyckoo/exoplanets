@@ -1,7 +1,7 @@
 /* main settings */
 
 body {
-    --el-height: 20rem;
+    --el-height: 30rem;
     font-family: "MuseoModerno", sans-serif, serif, cursive;
     margin: 0;
     background-color: #090620;
@@ -30,7 +30,7 @@ h1, h3, p {
 .navbar > a:link, a:visited {
     font-weight: 600;
     text-decoration: none;
-    color: antiquewhite;
+    color: azure;
     text-shadow: 0.25rem 0.25rem 0.25rem rgb(209, 135, 224);
     margin: 0.5em
 }
@@ -46,20 +46,21 @@ h1, h3, p {
 /* search page */
 
 .data-container {
-    background-color: black;
+    background-color: rgba(7, 7, 7, 0.7);
     border: 0.125em rgb(29, 29, 29) solid;
-    width: auto;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: antiquewhite;
-    opacity: 50%;
+    color: azure;
     margin: 0 auto;
     padding: 0.5em;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -68,9 +69,16 @@ h1, h3, p {
     overflow: auto;
 }
 
+#model-bg {
+    background: no-repeat center url(../assets/img/black-circle.png);
+    background-size: cover;
+    justify-self: auto;
+    justify-content: center;
+}
+
 #vl {
-    border-left: 0.125rem solid antiquewhite;
+    border-left: 0.125rem solid azure;
     margin-right: 0.625rem;
+    margin-left: 0.375rem;
     height: var(--el-height);
-    opacity: 1;
 }
