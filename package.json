@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/nyckoo/exoplanets#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "particles.js": "^2.0.0",
+    "three": "^0.132.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
