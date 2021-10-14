@@ -24,13 +24,13 @@ export default class extends AbstractView {
     async getScript() {
         // Reference to the container el.
         const container = document.querySelector("#model-bg");
-        import("../model/Model.mjs").then(module => {
+        import("../bundle/Sphere.js").then(module => {
             // Default class import as a module
             const Model = module.default;
             // Instance of a new Model
             const model = new Model(container);
             // Render the scene
-            model.render();
+            model.start();
         })
         .catch(err => {
             console.log(err);

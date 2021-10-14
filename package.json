@@ -20,10 +20,12 @@
   "homepage": "https://github.com/nyckoo/exoplanets#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "particles.js": "^2.0.0",
-    "three": "^0.132.2"
+    "three": "^0.132.2",
+    "tsparticles": "^1.35.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "nodemon": "^2.0.12",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
