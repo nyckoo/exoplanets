@@ -3,8 +3,6 @@ import Search from "./views/Search.mjs";
 import About from "./views/About.mjs";
 import Stats from "./views/Stats.mjs";
 
-'use strict';
-
 // Navigation to sections instead of refreshing the page
 const navigateTo = url => {
     history.pushState(null, null, url);
@@ -18,6 +16,7 @@ const router = async () => {
     const routes = [
         { path: "/", view: Home },
         { path: "/search", view: Search },
+        // { path: "/search/:id", view: },
         { path: "/about", view: About },
         { path: "/stats", view: Stats }
     ]
